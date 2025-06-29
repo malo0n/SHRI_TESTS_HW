@@ -14,7 +14,7 @@ type Props = {
  * Компонент секции с хайлайтами результатов анализа
  */
 export const HighlightsSection: FC<Props> = ({ highlights }) => {
-    if (highlights.length === 0) {
+    if (!highlights || highlights.length === 0) {
         return (
             <Typography size="l" className={styles.highlightsPlaceholder}>
                 Здесь появятся хайлайты

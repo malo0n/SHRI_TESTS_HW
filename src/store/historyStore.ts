@@ -8,5 +8,5 @@ export const useHistoryStore = create<HistoryState>()(
         ...createHistorySlice(...a),
         ...createModalSlice(...a),
         ...createSharedSlice(...a),
-    }))
+    })) 
 );

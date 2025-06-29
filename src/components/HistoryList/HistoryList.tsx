@@ -9,7 +9,7 @@ import { useShallow } from 'zustand/react/shallow';
 import styles from './HistoryList.module.css';
 
 export const HistoryList = () => {
-    const { history, showModal, setSelectedItem, removeFromHistoryStore, updateHistoryFromStorage } = useHistoryStore(
+    const { history, showModal, setSelectedItem, removeFromHistoryStore, updateHistoryFromStorage,  } = useHistoryStore(
         useShallow((state) => ({
             showModal: state.showModal,
             setSelectedItem: state.setSelectedItem,

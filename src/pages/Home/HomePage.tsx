@@ -43,6 +43,7 @@ export const HomePage = () => {
         }
 
         setStatus('processing');
+        
 
         await analyzeCsv(file);
     };
